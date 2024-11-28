@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.App {
+    max-width: 830px;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.post__btns {
+    display: flex;
+}
+
+hr {
+    margin: 15px 0;
+    height: 0.2px;
+    opacity: 0.5;
+}
+
+@media (max-width: 469px) {
+    .post {
+        display: block;
+        padding: 15px;
+        border: 2px solid teal;
+        margin-top: 15px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .post__content {
+        margin-bottom: 10px;
+    }
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}   
+
+.page__current {
+    border: 2px solid orange;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    padding: 25px 30px;
+    justify-content: space-between;
+    background: rgba(35, 86, 50, 0.823);
+    margin-bottom: 30px;
+    position: sticky;
+}
+
+.navbar__links a {
+    margin-right: auto;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-left: 15px;
+}
+
